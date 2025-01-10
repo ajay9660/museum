@@ -4,12 +4,65 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Art Museum</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/x-icon" href="img/icon/Favicon.png">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="Favicon.png">
 <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"></script>
+<style>
+  .icon-black{
+    fill: #000;
+}
+.icon-white{
+    fill: #fff; 
+}
+.bg-black{
+    background: #000;
+}
+
+/* If the screen size is 992px wide or more */
+@media (min-width: 992px) {
+.for-mobile{display: none;}
+}
+/* If the screen size is smaller than 992px */
+@media (max-width: 992px) {
+.for-pc{display: none;}
+}
+/* If the screen size is 1200px wide or more */
+@media (min-width: 768px) {
+.for-mobile-text{display: none;}
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 768px) {
+.for-pc-text{display: none;}
+}
+.tob-bar-text{    
+    font-size: 13px;
+}
+.head{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+    background: white;
+}
+.bg-image{
+    background: url('bg-image.jpg');
+    height: 550px;
+}
+.web_bg-1{
+    background-color: #FDE8D3;
+}
+.web_bg-2{
+    background-color: #F39E8A;
+}
+.bg-image-gallery{
+    background: url('bg-image-gallery.jpg');
+    height: 350px;
+    color: black;
+}
+.newsletter{
+    background-color: #F39E8A;
+}
+</style>
 </head>
 <body>
   <!-- Header -->
@@ -59,8 +112,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-danger p-3 position-relative">
       <div class="container position-absolute top-0 start-50 translate-middle-x p-1 head">
-        <a class="navbar-brand p-0 ms-2" href="Index.html">
-          <img src="img/icon/logo.png" height="50px" alt="">
+        <a class="navbar-brand p-0 ms-2" href="index.html">
+          <img src="logo.png" height="50px" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -68,7 +121,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about"> About</a>
@@ -109,7 +162,7 @@
             <div class="col-lg-3 col-md-6 col-sm-12 col-12">
               <div class="card">
                 <a href="gallery.html">
-                  <img src="img/gallery/exhibition-1.jpg" class="img-fluid" alt="">
+                  <img src="exhibition-1.jpg" class="img-fluid" alt="">
                 </a>
               </div>
               <h4 class="text-center p-4">For School Students</h4>
@@ -117,7 +170,7 @@
             <div class="col-lg-3 col-md-6 col-sm-12 col-12">
               <div class="card">
                 <a href="gallery.html">
-                  <img src="img/gallery/exhibition-2.jpg" class="img-fluid" alt="">
+                  <img src="exhibition-2.jpg" class="img-fluid" alt="">
                 </a>
               </div>
               <h4 class="text-center  p-4">Sport Museum</h4>
@@ -125,7 +178,7 @@
             <div class="col-lg-3 col-md-6 col-sm-12 col-12">
               <div class="card">
                 <a href="gallery.html">
-                  <img src="img/gallery/exhibition-3.jpg" class="img-fluid" alt="">
+                  <img src="exhibition-3.jpg" class="img-fluid" alt="">
                 </a>
               </div>
               <h4 class="text-center  p-4">Natural History</h4>
@@ -133,7 +186,7 @@
             <div class="col-lg-3 col-md-6 col-sm-12 col-12">
               <div class="card">
                 <a href="gallery.html">
-                  <img src="img/gallery/exhibition-4.jpg" class="img-fluid" alt="">
+                  <img src="exhibition-4.jpg" class="img-fluid" alt="">
                 </a>
               </div>
               <h4 class="text-center  p-4">Science Museum</h4>
@@ -152,7 +205,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12">
               <div class="position-relative">
-                <img class="img-fluid" src="img/about.jpg" alt="Museum About">
+                <img class="img-fluid" src="about.jpg" alt="Museum About">
               </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 text-dark">
@@ -216,7 +269,7 @@
 
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="position-relative">
-              <img class="img-fluid" src="img/director.jpg" alt="">
+              <img class="img-fluid" src="director.jpg" alt="">
             </div>
           </div>
                   
@@ -240,7 +293,7 @@
             <div class="card mb-4">
               <div class="row g-0">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                  <img src="img/blog-images/post_1.jpg" width="100%" class="img-fluid rounded-start" alt="...">
+                  <img src="post_1.jpg" width="100%" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                   <div class="card-body">
@@ -266,7 +319,7 @@
             <div class="card mb-4">
               <div class="row g-0">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                  <img src="img/blog-images/post_2.jpg" width="100%" class="img-fluid rounded-start" alt="...">
+                  <img src="post_2.jpg" width="100%" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                   <div class="card-body">
@@ -285,7 +338,7 @@
             <div class="card mb-4">
               <div class="row g-0">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                  <img src="img/blog-images/post_3.jpg" width="100%" class="img-fluid rounded-start" alt="...">
+                  <img src="post_3.jpg" width="100%" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                   <div class="card-body">
@@ -355,19 +408,19 @@
             <div class="row text-center">
               <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                 <img
-                  src="img/gallery/gallery-1.jpg"
+                  src="gallery-1.jpg"
                   class="w-100 shadow-1-strong rounded mb-4"
                   alt="Boat on Calm Water"
                 />
 
                 <img
-                  src="img/gallery/gallery-2.jpg"
+                  src="gallery-2.jpg"
                   class="w-100 shadow-1-strong rounded mb-4"
                   alt="Wintry Mountain Landscape"
                 />
 
                 <img
-                src="img/gallery/gallery-6.jpg"
+                src="gallery-6.jpg"
                 class="w-100 shadow-1-strong rounded mb-4"
                 alt="Wintry Mountain Landscape"
               />
@@ -376,19 +429,19 @@
 
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <img
-                  src="img/gallery/gallery-4.jpg"
+                  src="gallery-4.jpg"
                   class="w-100 shadow-1-strong rounded mb-4"
                   alt="Mountains in the Clouds"
                 />
 
                 <img
-                  src="img/gallery/gallery-5.jpg"
+                  src="gallery-5.jpg"
                   class="w-100 shadow-1-strong rounded mb-4"
                   alt="Boat on Calm Water"
                 />
                 
                 <img
-                  src="img/gallery/gallery-3.jpg"
+                  src="gallery-3.jpg"
                   class="w-100 shadow-1-strong rounded mb-4"
                   alt="Wintry Mountain Landscape"
                 />
@@ -397,19 +450,19 @@
 
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <img
-                  src="img/gallery/gallery-7.jpg"
+                  src="gallery-7.jpg"
                   class="w-100 shadow-1-strong rounded mb-4"
                   alt="Waves at Sea"
                 />
 
                 <img
-                  src="img/gallery/gallery-8.jpg"
+                  src="gallery-8.jpg"
                   class="w-100 shadow-1-strong rounded mb-4"
                   alt="Yosemite National Park"
                 />
 
                 <img
-                  src="img/gallery/gallery-9.jpg"
+                  src="gallery-9.jpg"
                   class="w-100 shadow-1-strong rounded mb-4"
                   alt="Wintry Mountain Landscape"
                 />
@@ -591,7 +644,7 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mx-auto mb-4">
               <!-- Content -->
               <a href="Index.html">
-                <img src="img/icon/logo-ft.png" height="80px" alt="">
+                <img src="logo-ft.png" height="80px" alt="">
               </a>
               <p class="pt-4">
                 Museums stand as portals to the past, guardians of culture, and witnesses to the ever-evolving human story. These hallowed halls house 
