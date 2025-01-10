@@ -1,0 +1,51 @@
+.icon-black{
+    fill: #000;
+}
+.icon-white{
+    fill: #fff; 
+}
+.bg-black{
+    background: #000;
+}
+
+/* If the screen size is 992px wide or more */
+@media (min-width: 992px) {
+.for-mobile{display: none;}
+}
+/* If the screen size is smaller than 992px */
+@media (max-width: 992px) {
+.for-pc{display: none;}
+}
+/* If the screen size is 1200px wide or more */
+@media (min-width: 768px) {
+.for-mobile-text{display: none;}
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 768px) {
+.for-pc-text{display: none;}
+}
+.tob-bar-text{    
+    font-size: 13px;
+}
+.head{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+    background: white;
+}
+.bg-image{
+    background: url('../img/bg-image.jpg');
+    height: 550px;
+}
+.web_bg-1{
+    background-color: #FDE8D3;
+}
+.web_bg-2{
+    background-color: #F39E8A;
+}
+.bg-image-gallery{
+    background: url('../img/bg-image-gallery.jpg');
+    height: 350px;
+    color: black;
+}
+.newsletter{
+    background-color: #F39E8A;
+}
